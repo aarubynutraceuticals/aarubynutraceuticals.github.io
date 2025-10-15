@@ -1,39 +1,303 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dummy GitHub Pages Site</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AARUBY Nutraceuticals - Enterprise-Grade Premium Health Supplements. Globally Certified, Science-Backed, Market-Leading Innovation.">
+    <meta name="keywords" content="nutraceuticals, health supplements, probiotics, protein, wellness, enterprise solutions">
+    <title>AARUBY Nutraceuticals | Global Enterprise Health Solutions</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to your Dummy GitHub Pages Site</h1>
-    <p class="muted">This is a sample static site you can use to test GitHub Pages + custom domain.</p>
-  </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home" class="logo-container">
+            <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FF8C42;stop-opacity:1" />
+                    </linearGradient>
+                    <radialGradient id="shimmerGradient" cx="30%" cy="30%">
+                        <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.5" />
+                        <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+                    </radialGradient>
+                </defs>
+                <circle cx="50" cy="50" r="48" fill="url(#logoGradient)" filter="drop-shadow(0 8px 16px rgba(255, 107, 53, 0.3))"/>
+                <circle cx="50" cy="50" r="48" fill="url(#shimmerGradient)" />
+                <g fill="white">
+                    <polygon points="30,75 42,20 48,20 36,75" />
+                    <polygon points="52,20 64,75 70,75 58,20" />
+                    <rect x="39" y="48" width="22" height="7" rx="3" />
+                </g>
+                <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+            </svg>
+            <span class="logo-text">AARUBY</span>
+        </a>
+        <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact" class="cta-nav">Get Started</a></li>
+        </ul>
+    </nav>
 
-  <main>
-    <section class="card">
-      <h2>What to test</h2>
-      <ol>
-        <li>Push this repo to GitHub and enable Pages (branch: <code>main</code> or <code>gh-pages</code>).</li>
-        <li>Set a custom domain in the repo's Pages settings or add a <code>CNAME</code> file with your domain.</li>
-        <li>Add DNS records at your domain provider (A records for apex or CNAME for www).</li>
-        <li>Enable "Enforce HTTPS" in GitHub Pages settings after propagation.</li>
-      </ol>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Premium <span>Nutraceuticals</span> for Global Wellness</h1>
+                <p class="hero-subtitle">Science-engineered formulations combining traditional botanicals with cutting-edge nutrition research. Enterprise-grade supplements trusted by health-conscious leaders worldwide.</p>
+                
+                <div class="trust-badges">
+                    <div class="badge">
+                        <div class="badge-icon">✓</div>
+                        <span>FSSAI & GMP Certified</span>
+                    </div>
+                    <div class="badge">
+                        <div class="badge-icon">✓</div>
+                        <span>50+ Global Markets</span>
+                    </div>
+                    <div class="badge">
+                        <div class="badge-icon">✓</div>
+                        <span>Clinical Tested</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollTo('products')">Explore Portfolio</button>
+                    <button class="btn btn-secondary" onclick="scrollTo('contact')">Request Samples</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="product-showcase">
+                    Enterprise Premium<br>Wellness Solutions
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="card">
-      <h2>Quick checks</h2>
-      <ul>
-        <li>Default Pages URL: <code>&lt;username&gt;.github.io&lt;/&gt;</code></li>
-        <li>Custom domain: once configured, visit <code>https://your-domain.example</code></li>
-      </ul>
+    <!-- Categories Section -->
+    <section class="categories" id="products">
+        <div class="section-header">
+            <h2 class="section-title">Our <span>Core Product</span> Categories</h2>
+            <p class="section-subtitle">Engineered for performance, crafted for wellness. Each category addresses critical health pillars in the modern market.</p>
+        </div>
+        
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="icon-box">🌿</div>
+                <h3>Immunity & Wellness</h3>
+                <p>Advanced botanical blends featuring clinical-grade Turmeric (95% Curcumin), Ashwagandha, Giloy, and essential micronutrients. Preventive health engineered for modern urban lifestyles.</p>
+            </div>
+            
+            <div class="category-card">
+                <div class="icon-box">💪</div>
+                <h3>Sports Nutrition</h3>
+                <p>High-performance protein isolates with premium plant-based alternatives. Designed for fitness professionals, athletes, and active consumers seeking clean-label, results-driven formulations.</p>
+            </div>
+            
+            <div class="category-card">
+                <div class="icon-box">🔬</div>
+                <h3>Digestive Health</h3>
+                <p>Multi-strain probiotics and synbiotic formulations targeting gut-brain axis optimization. Addresses modern lifestyle-induced digestive challenges with scientific precision.</p>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p class="muted">Generated for testing GitHub Pages — modify freely.</p>
-  </footer>
+    <!-- Features Section -->
+    <section class="features" id="why-us">
+        <div class="section-header">
+            <h2 class="section-title">Why Choose <span>AARUBY</span></h2>
+            <p class="section-subtitle">Excellence engineered into every formulation. Industry-leading standards meet premium quality.</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">🧬</div>
+                <h4>Scientifically Formulated</h4>
+                <p>Every product backed by clinical research and developed with PhD nutritionists and industry experts.</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">🏆</div>
+                <h4>Quality Assured</h4>
+                <p>FSSAI & GMP certified manufacturing with ISO 9001:2015 compliance and complete ingredient transparency.</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">🌍</div>
+                <h4>Global Standards</h4>
+                <p>International-grade quality meeting requirements of 50+ countries with premium clean-label certifications.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <h4>Innovation-Driven</h4>
+                <p>Continuous R&D investment ensuring cutting-edge formulations with latest nutritional science breakthroughs.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">✨</div>
+                <h4>Premium Ingredients</h4>
+                <p>No artificial sweeteners, GMO-free, sustainably sourced from vetted global suppliers with full traceability.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🤝</div>
+                <h4>Enterprise Support</h4>
+                <p>Dedicated business relations team, custom formulations, B2B partnerships, and white-label solutions available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="section-header">
+            <h2 class="section-title">Industry <span>Certifications</span></h2>
+            <p class="section-subtitle">Meeting and exceeding global standards for safety, quality, and efficacy.</p>
+        </div>
+        
+        <div class="cert-grid">
+            <div class="cert-badge">
+                <div class="cert-icon">🛡️</div>
+                <p>FSSAI<br>Licensed</p>
+            </div>
+            <div class="cert-badge">
+                <div class="cert-icon">✓</div>
+                <p>GMP<br>Certified</p>
+            </div>
+            <div class="cert-badge">
+                <div class="cert-icon">🌍</div>
+                <p>ISO<br>9001:2015</p>
+            </div>
+            <div class="cert-badge">
+                <div class="cert-icon">🔬</div>
+                <p>Clinical<br>Tested</p>
+            </div>
+            <div class="cert-badge">
+                <div class="cert-icon">🌱</div>
+                <p>Non-GMO<br>Verified</p>
+            </div>
+            <div class="cert-badge">
+                <div class="cert-icon">🏅</div>
+                <p>Clean Label<br>Approved</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Transform Your Health Today</h2>
+        <p>Join enterprises and wellness leaders choosing AARUBY for premium nutrition</p>
+        <button class="btn btn-primary" onclick="scrollTo('contact')">Start Your Journey</button>
+    </section>
+
+    <!-- Footer with Contact -->
+    <footer id="contact">
+        <div class="footer-wrapper">
+            <div class="footer-grid">
+                <!-- About Section -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="footer-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FF8C42;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="48" fill="url(#footerLogoGradient)" />
+                            <g fill="white">
+                                <polygon points="30,75 42,20 48,20 36,75" />
+                                <polygon points="52,20 64,75 70,75 58,20" />
+                                <rect x="39" y="48" width="22" height="7" rx="3" />
+                            </g>
+                        </svg>
+                        <span class="footer-logo-text">AARUBY</span>
+                    </div>
+                    <p class="footer-desc">Enterprise-grade nutraceuticals engineered for the globally health-conscious market. Science meets nature in every formulation, delivering premium wellness solutions worldwide.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="Facebook">f</a>
+                        <a href="#" class="social-icon" title="Twitter">𝕏</a>
+                        <a href="#" class="social-icon" title="LinkedIn">in</a>
+                        <a href="#" class="social-icon" title="YouTube">▶</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#products">Products</a>
+                        <a href="#why-us">About Us</a>
+                        <a href="#certifications">Certifications</a>
+                        <a href="#">Blog & Resources</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Mumbai, India<br>Premium Business Park, Sector 1</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span>+91 9876543210</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <span>hello@aaruby.com<br>support@aaruby.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🕐</span>
+                            <span>Mon - Fri: 9 AM - 6 PM<br>Sat - Sun: 10 AM - 4 PM IST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="footer-section">
+                    <h3>Get in Touch</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        <div id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 AARUBY Nutraceuticals. All Rights Reserved.</p>
+                <p>Global Quality Standards | Engineered for Excellence | Enterprise Solutions</p>
+                <div class="footer-compliance">
+                    <a href="#" class="compliance-link">FSSAI Licensed</a>
+                    <a href="#" class="compliance-link">GMP Certified</a>
+                    <a href="#" class="compliance-link">ISO 9001:2015</a>
+                    <a href="#" class="compliance-link">Serving 50+ Countries</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
